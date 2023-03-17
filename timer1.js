@@ -3,8 +3,7 @@ const time = process.argv.slice(2);
 
 //iterates over time array
 for (let i = 0; i < time.length; i++) {
-  //if time is more than 0 seconds or it's type is a number, then alarm should go off
-  //if (time[i] > 0 || time[i] === "number") {
+  //if time is more than 0 seconds, alarm will sound. (excludes - #'s or if type is not a number or if no number is enter as argument)
   if (time[i] > 0) {
     setTimeout(() => {
     //makes sound
